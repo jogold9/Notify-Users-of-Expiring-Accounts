@@ -15,15 +15,14 @@ Function DoesEmailExist
    } else {            
     Write-Host $User.Name "has an email in Active Directory. Let's send an email."
     Send_Email            
-   }
-        
+   }        
 }
 
 #Function sends emails if needed
+Function Send_Email{
+
 $name = $user.Name
 $expiring_date = $user.AccountExpirationDate
-
-Function Send_Email{
 
 Write-Host "Sending Email to" $user.Name "whose account expires" $user.AccountExpirationDate "`n"
 
