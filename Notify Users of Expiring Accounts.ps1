@@ -76,9 +76,9 @@ Try
         Return $IsValidEmailAddress
 }
 
-##########################################
-# Functions are done, let's run some code
-##########################################
+########################################################
+# Function definitions are done now, let's run some code
+########################################################
 
 # Get user accounts expiring in the next 30 days, computer accounts and student accounts excluded
 $expiring_accounts = Search-ADAccount -AccountExpiring -UsersOnly -TimeSpan "30"
